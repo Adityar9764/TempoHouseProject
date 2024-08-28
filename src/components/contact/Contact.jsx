@@ -24,6 +24,9 @@ const Contact = () => {
 
       if (response.ok) {
         toast.success("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
       } else {
         toast.error(result.message || "An error occurred. Please try again.");
       }

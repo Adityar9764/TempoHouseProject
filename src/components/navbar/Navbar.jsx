@@ -10,9 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#4682b4] dark:bg-[#4682b4] fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-4">
-        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+    <nav className="bg-[#4682b4] dark:bg-[#4682b4] fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <Link
+          to="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <div className="flex items-center justify-center w-6 h-6 bg-green-500 text-white rounded-full">
             <FaDollarSign size={20} />
           </div>
@@ -46,11 +49,13 @@ const Navbar = () => {
           className={`w-full lg:flex lg:w-auto ${isOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className="flex flex-col font-oswald py-2 px-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent dark:border-gray-700">
+          <ul
+            className={`flex flex-col font-oswald py-2 px-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 lg:mt-0 lg:border-0 lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent dark:border-gray-700`}
+          >
             <li>
               <Link
                 to="/"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded lg:bg-transparent lg:text-white lg:p-0 dark:text-white"
+                className="block py-2 pl-3 pr-4 text-black lg:text-white  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:bg-gray-800 lg:dark:bg-transparent"
               >
                 Home
               </Link>
@@ -58,7 +63,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/services"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-black lg:text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
               >
                 Services
               </Link>
@@ -66,7 +71,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/client"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-black lg:text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
               >
                 Client
               </Link>
@@ -74,7 +79,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-black lg:text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
               >
                 About
               </Link>
@@ -82,7 +87,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
+                className="block py-2 pl-3 pr-4 text-black lg:text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
               >
                 Contact
               </Link>
