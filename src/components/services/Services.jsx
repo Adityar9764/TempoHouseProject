@@ -1,9 +1,5 @@
-
-
 const Services = () => {
-  return (
-    <div>Services</div>
-  )
-}
+  return <div className="mt-[45px]">Services</div>;
+};
 
-export default Services
+export default Services;
