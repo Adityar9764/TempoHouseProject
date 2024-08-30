@@ -5,22 +5,22 @@ const WhyTrustUs = () => {
     {
       title: 'Customer Satisfaction',
       description: 'Serving satisfied customers for over 50 years',
-      icon: '/Icons/satisfaction.png', 
+      icon: '/satisfaction.png', 
     },
     {
       title: 'Original Products',
       description: 'Top-notch parts sourced from trusted manufacturers',
-      icon: '/Icons/original.png',
+      icon: '/original.png',
     },
     {
       title: 'Customer Support',
       description: 'Dedicated support for a seamless experience',
-      icon: '/Icons/help-desk.png',
+      icon: '/help-desk.png',
     },
     {
       title: 'Affordable Rates',
       description: 'Tempo House offers a good solution if you are on a budget',
-      icon: '/Icons/money.png',
+      icon: '/money.png',
     },
   ];
 
