@@ -17,6 +17,9 @@ export default {
           800: "#1e40af",
           900: "#1e3a8a",
           950: "#172554",
+        "steel-blue": "#4682b4",
+        'steel-blue-light': '#6fa3d2', // Adjusted lighter shade
+        'steel-blue-dark': '#36668e', // Adjusted darker shade
         },
       },
     },
@@ -37,6 +40,8 @@ export default {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         "Noto Color Emoji",
+         oswald: ["Oswald", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       ],
       sans: [
         "Roboto",
