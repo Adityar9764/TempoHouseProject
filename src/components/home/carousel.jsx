@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const clients = [
-    { name: "Ashok Leyland", logo: "/Ashok Leyland.png" },
+  { name: "Ashok Leyland", logo: "/Ashok Leyland.png" },
   { name: "Mahindra", logo: "/Mahindra.png" },
   { name: "Maruti Suzuki", logo: "/Maruti Suzuki.png" },
   { name: "TATA", logo: "/TATA.png" },
@@ -22,25 +22,24 @@ const clients = [
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const logosPerView = 3; 
+  const logosPerView = 3;
 
   // Automatic transition
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 4000);
+    }, 2000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex + logosPerView) % clients.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex + logosPerView) % clients.length);
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - logosPerView + clients.length) % clients.length
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - logosPerView + clients.length) % clients.length
     );
   };
 
@@ -51,7 +50,9 @@ export default function Carousel() {
 
   return (
     <div className="max-w-4xl mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-2 [text-shadow:1px_2px_2px_var(--tw-shadow-color)] shadow-slate-900">OUR CLIENTS</h2>
+      <h2 className="text-3xl font-bold mb-2 [text-shadow:1px_2px_2px_var(--tw-shadow-color)] shadow-slate-900">
+        OUR CLIENTS
+      </h2>
       <p className="mb-4">
         Tempo House Over the Past 50 Years, has Garnered an Enviable List of
         Clientele
@@ -64,14 +65,14 @@ export default function Carousel() {
           &#10094;
         </button>
         <div className="flex space-x-4 transition-transform duration-500 ease-in-out transform-gpu">
-            {visibleClients.map((client, index) => (
+          {visibleClients.map((client, index) => (
             <img
-            key={index}
-            src={client.logo}
-            alt={client.name}
-            className="w-24 h-24 object-contain sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 transition-transform duration-500 ease-in-out transform-gpu"
-            />          
-            ))}
+              key={index}
+              src={client.logo}
+              alt={client.name}
+              className="w-24 h-24 object-contain sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 transition-transform duration-500 ease-in-out transform-gpu"
+            />
+          ))}
         </div>
 
         <button
