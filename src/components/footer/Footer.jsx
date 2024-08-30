@@ -1,6 +1,8 @@
 import React from "react"
 import logo from '../../images/logo.jpg';
 import './Footer.css'
+import { location, phone, email } from "../../utils/Icons";
+
 
 const Footer = () => {
   return (<div className="complete-footer">
@@ -11,23 +13,23 @@ const Footer = () => {
        <div className="footer-details">
           <div className="address">
             <span><b>Address: </b></span>
-            No 37 GP Road Chennai 600002 <br />
-          Godown adress No 58/54 Mir <br /> Bakshi Ali Street Royapettah Chennai 14</div>
+          <a href="https://www.google.com/maps/dir/26.9402044,80.9318324/13.0627095,80.2669808/@20.0030751,79.6595371,6z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MDgyNy4wIKXMDSoASAFQAw%3D%3D" target="/"> {location} No 37 GP Road Chennai 600002 <br />
+          Godown adress No 58/54 Mir <br /> Bakshi Ali Street Royapettah Chennai 14</a></div>
           <div className="quick-links">
             <ul>
               <li><b>Quick links</b></li>
-              <li>Home</li>
-              <li>Contact Us</li>
-              <li>About</li>
-              <li>Services</li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
             </ul>
-          </div>
-          <div className="contact-details">
+            <div className="contact-details">
             <span><b>Contact Details</b></span>
             <ul>
-              <li>98192891002</li>
-              <li>sample@gmail.com</li>
+              <li>{phone} 7947105090</li>
+              <li>{email} sample@gmail.com</li>
             </ul>
+          </div>
           </div>
        </div>
     </div>
