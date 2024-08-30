@@ -1,6 +1,6 @@
-import { FaDollarSign } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../images/logo.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,13 +16,13 @@ const Navbar = () => {
           to="/"
           className="flex items-center space-x-2 rtl:space-x-reverse"
         >
-          <div className="flex items-center justify-center w-5 h-5 bg-green-500 text-white rounded-full">
-            <FaDollarSign size={16} />
-          </div>
-          <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white font-oswald">
-            FinanceCo
-          </span>
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-12 w-145 object-fill rounded-2xl"
+          />
         </Link>
+
         <button
           onClick={toggleMenu}
           type="button"
@@ -49,9 +49,7 @@ const Navbar = () => {
           className={`w-full lg:flex lg:w-auto ${isOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul
-            className="flex flex-col font-oswald py-1 px-2 mt-2 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-4 lg:mt-0 lg:border-0 lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent dark:border-gray-700"
-          >
+          <ul className="flex flex-col font-oswald py-1 px-2 mt-2 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-4 lg:mt-0 lg:border-0 lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent dark:border-gray-700">
             <li>
               <Link
                 to="/"
@@ -89,7 +87,7 @@ const Navbar = () => {
                 to="/contact"
                 className="block py-1 pl-2 pr-3 text-black lg:text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
               >
-                Contact
+                Contact us
               </Link>
             </li>
           </ul>
