@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import ClientCarousel from "./Clientcarousel.jsx";
+// import ClientCarousel from "./Clientcarousel.jsx";
 import Carousel from "./carousel.jsx";
 import WhyTrustUs from "./WhytrustUs.jsx";
 import ProductRange from "./productRange.jsx";

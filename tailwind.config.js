@@ -40,8 +40,8 @@ export default {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         "Noto Color Emoji",
-         oswald: ["Oswald", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        "oswald",
+        "roboto" 
       ],
       sans: [
         "Roboto",
