@@ -1,4 +1,5 @@
 import logo from "../../images/logo.jpg";
+import Chatbot from "../chatbot/Chatbot";
 
 const Footer = () => {
   return (
@@ -75,6 +76,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <Chatbot />
     </div>
   );
 };
