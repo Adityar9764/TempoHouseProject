@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-gray-100 py-10">
+    <div className="bg-[#95b3db] text-black font-medium py-10">
       <div className="max-w-6xl mx-auto px-4">
         {/* Logo Section */}
         <div className="flex justify-center mb-8">
