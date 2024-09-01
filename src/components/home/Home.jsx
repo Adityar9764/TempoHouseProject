@@ -1,7 +1,10 @@
-import Carousel from "./Carousel";
-import WhyTrustUs from "./WhyTrustUs";
-import ProductRange from "./ProductRange";
-import ReviewsSection from "./reviews";
+import React from "react";
+import { useState, useEffect } from "react";
+// import ClientCarousel from "./Clientcarousel.jsx";
+import Carousel from "./carousel.jsx";
+import WhyTrustUs from "./WhytrustUs.jsx";
+import ProductRange from "./productRange.jsx";
+import ReviewsSection from "./reviews.jsx";
 
 const Home = () => {
   return (
@@ -44,8 +47,15 @@ const Home = () => {
         </p>
       </section>
 
+<<<<<<< HEAD
+        <section className="TopBanner relative h-screen text-white flex flex-col justify-center items-center">
+            <div className="absolute inset-0 bg-cover bg-center z-0 opacity-68" style={{ backgroundImage: "url('/bg1.jpg')",
+            width: "100%"
+              }}></div>
+=======
       {/* Product Range Section */}
       <ProductRange className="my-8 mx-auto max-w-screen-lg px-4 md:px-6 lg:px-8" />
+>>>>>>> 769fe5385d8db5d8f742700c644b82d0ea9c0629
 
       {/* Why Trust Us & Reviews Section */}
       <section className="trust_us py-1">

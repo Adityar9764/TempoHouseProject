@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#4682b4] dark:bg-[#4682b4] fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-[#4682b4] dark:bg-[#4682b4] fixed w-full z-20 top-0 start-0  dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <Link
           to="/"
@@ -46,7 +46,7 @@ const Navbar = () => {
           </svg>
         </button>
         <div
-          className={`w-full lg:flex lg:w-auto ${isOpen ? "block" : "hidden"}`}
+          className={`w-full  overflow-hidden transition-all duration-500 ease-in-out lg:flex lg:w-auto ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"} lg:max-h-full lg:opacity-100`}
           id="navbar-default"
         >
           <ul className="flex flex-col font-oswald py-1 px-2 mt-2 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-4 lg:mt-0 lg:border-0 lg:bg-transparent dark:bg-gray-800 lg:dark:bg-transparent dark:border-gray-700">
