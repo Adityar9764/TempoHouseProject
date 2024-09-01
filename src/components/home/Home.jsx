@@ -20,7 +20,9 @@ const Home = () => {
         </section> */}
 
         <section className="TopBanner relative h-screen text-white flex flex-col justify-center items-center">
-            <div className="absolute inset-0 bg-cover bg-center z-0 opacity-68" style={{ backgroundImage: "url('/bg.jpg')" }}></div>
+            <div className="absolute inset-0 bg-cover bg-center z-0 opacity-68" style={{ backgroundImage: "url('/bg1.jpg')",
+            width: "100%"
+              }}></div>
 
             <div className="absolute inset-0 bg-black opacity-40 z-5"></div> 
 
