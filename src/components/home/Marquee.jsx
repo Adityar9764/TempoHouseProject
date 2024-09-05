@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css'
+import './../../index.css'
 
 const clients = [
 
@@ -36,7 +36,7 @@ const ClientsMarqueeSection = () => {
     >
       <img
         src={logo}
-        alt={Client Logo ${idx + 1}}
+        alt={`Client Logo ${idx + 1}`}
         className="max-w-full h-auto object-contain"
       />
     </div>
