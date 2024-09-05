@@ -1,5 +1,4 @@
-
-/* eslint-disable react/prop-types */
+import React from "react";
 
 const reviews = [
   {
@@ -98,9 +97,6 @@ const ReviewsSection = () => {
   return (
     <div className="py-10 bg-gray-50">
 
-      <h2 className="text-3xl text-steel-blue-dark font-semibold text-center mb-8 [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black">
-        A few words about us
-      </h2>
       <h2 className="text-3xl text-steel-blue-dark font-semibold text-center mb-8 [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black">A few words about us</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
