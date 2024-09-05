@@ -42,7 +42,7 @@ export default {
         "Noto Color Emoji",
 
         "oswald",
-        "roboto" 
+        "roboto",
          "oswald",
         "roboto"
 
