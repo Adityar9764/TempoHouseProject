@@ -13,8 +13,8 @@ const Home = () => {
       <section className="TopBanner relative h-screen text-white flex flex-col justify-center items-center">
         <div
           className="absolute inset-0 bg-cover bg-center z-0 opacity-68"
-          style={{ backgroundImage: "url('/bg1.jpg')" }}
-        ></div>
+          style={{ backgroundImage: "url('/bg1.jpg')" }}>
+        </div>
         <div className="absolute inset-0 bg-black opacity-40 z-5"></div>
 
         <h1 className="font-oswald text-4xl md:text-5xl lg:text-6xl mb-4 text-center z-10 drop-shadow-lg [text-shadow:3.5px_4.5px_3px_var(--tw-shadow-color)] shadow-black">
@@ -47,14 +47,6 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Second Top Banner Section */}
-      <section className="TopBanner relative h-screen text-white flex flex-col justify-center items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center z-0 opacity-68"
-          style={{ backgroundImage: "url('/bg1.jpg')" }}
-        ></div>
-      </section>
-
       {/* Product Range Section */}
       <ProductRange className="my-8 mx-auto max-w-screen-lg px-4 md:px-6 lg:px-8" />
 
@@ -63,9 +55,6 @@ const Home = () => {
         <WhyTrustUs />
         <ReviewsSection />
       </section>
-
-      {/* Carousel Section */}
-      {/* <Carousel className="my-8 mx-auto max-w-screen-lg px-4 md:px-6 lg:px-8" /> */}
 
       <Services/>
 
