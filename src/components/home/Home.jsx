@@ -6,6 +6,7 @@ import WhyTrustUs from "./WhytrustUs.jsx";
 import ProductRange from "./productRange.jsx";
 import ReviewsSection from "./reviews.jsx";
 import ClientsMarqueeSection from "./Marquee.jsx";
+import Services from "../services/Services.jsx";
 
 const Home = () => {
   return (
@@ -67,6 +68,8 @@ const Home = () => {
 
       {/* Carousel Section */}
       <Carousel className="my-8 mx-auto max-w-screen-lg px-4 md:px-6 lg:px-8" />
+
+      <Services/>
 
       <ClientsMarqueeSection/>
     </>
