@@ -1,61 +1,55 @@
 import React from "react";
 
 const reviews = [
-  {
-    id: 1,
-    imageUrl: "https://via.placeholder.com/50",
-    stars: 5,
-    review:
-      "Fantastic service and top-quality parts! I found exactly what I needed for my van. The staff was incredibly helpful and knowledgeable.",
-    date: "08/20/2024",
-    source: "Google",
-  },
-  {
-    id: 2,
-    imageUrl: "https://via.placeholder.com/50",
-    stars: 4,
-    review:
-      "Great selection of parts for my truck. The ordering process was smooth, and my items arrived on time. Definitely recommend them!",
-    date: "07/15/2024",
-    source: "Yelp",
-  },
-  {
-    id: 3,
-    imageUrl: "https://via.placeholder.com/50",
-    stars: 5,
-    review:
-      "I’ve been a regular customer for years. They always have the right parts for my fleet of vehicles. Their customer support is second to none.",
-    date: "06/30/2024",
-    source: "Facebook",
-  },
-  {
-    id: 4,
-    imageUrl: "https://via.placeholder.com/50",
-    review:
-      "The best place to get parts for commercial vehicles. They have everything I need, and their prices are reasonable. A reliable supplier.",
-    date: "05/12/2024",
-    source: "Google",
-  },
-  {
-    id: 5,
-    imageUrl: "https://via.placeholder.com/50",
-    stars: 3,
-    review:
-      "Good selection and decent prices, but I wish they offered more options for express shipping. Otherwise, a solid experience.",
-    date: "04/25/2024",
-    source: "Yelp",
-  },
-  {
-    id: 6,
-    imageUrl: "https://via.placeholder.com/50",
-    stars: 5,
-    review:
-      "Outstanding quality and fast shipping! I ordered parts for my delivery vans, and everything was perfect. Will definitely order again.",
-    date: "03/18/2024",
-    source: "Google",
-  },
-];
-
+    {
+      id: 1,
+      imageUrl: "https://via.placeholder.com/50", 
+      stars: 5,
+      review: "Good service and top-quality parts, I found exactly what I needed for my van. The staff was really helpful and knowledgeable.",
+      date: "1 Year ago",
+      source: "Google",
+    },
+    {
+      id: 2,
+      imageUrl: "https://via.placeholder.com/50", 
+      stars: 4,
+      review: "Satisfied with the purchase, good value for the price. Definitely recommend them!",
+      date: "2 Years ago",
+      source: "Justdial",
+    },
+    {
+      id: 3,
+      imageUrl: "https://via.placeholder.com/50", 
+      stars: 4,
+      review: "Good product, definitely worth the money.",
+      date: "3 Months ago",
+      source: "Justdial",
+    },
+    {
+      id: 4,
+      imageUrl: "https://via.placeholder.com/50", 
+      stars: 5,
+      review: "Perfect quality and quick delivery, good service overall.",
+      date: "10 Years ago",
+      source: "Google",
+    },
+    {
+      id: 5,
+      imageUrl: "https://via.placeholder.com/50", 
+      stars: 3,
+      review: "Product is okay, does the job well.",
+      date: "4 Years ago",
+      source: "Justdial",
+    },
+    {
+      id: 6,
+      imageUrl: "https://via.placeholder.com/50", 
+      stars: 5,
+      review: "Been a customer for years.",
+      date: "1 Year ago",
+      source: "Google",
+    },
+  ];
 
 const ReviewCard = ({ imageUrl, stars, review, date, source }) => {
   return (
