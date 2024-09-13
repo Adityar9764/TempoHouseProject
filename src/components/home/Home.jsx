@@ -67,7 +67,7 @@ const Home = () => {
       </section>
 
       {/* Carousel Section */}
-      <Carousel className="my-8 mx-auto max-w-screen-lg px-4 md:px-6 lg:px-8" />
+      {/* <Carousel className="my-8 mx-auto max-w-screen-lg px-4 md:px-6 lg:px-8" /> */}
 
       <Services/>
 

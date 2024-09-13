@@ -23,7 +23,7 @@ const clients = [
 const ClientsMarqueeSection = () => {
   return (
     <section className="py-10 bg-gray-100">
-      <h2 className="text-center text-3xl font-bold mb-8">Our Clients</h2>
+      <h2 className="text-center text-3xl font-bold mb-8 [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black">Our Clients</h2>
       <div className="overflow-hidden relative w-full">
         <div className="flex animate-marquee space-x-6">
           {clients.map((logo, idx) => (

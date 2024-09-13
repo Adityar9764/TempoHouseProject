@@ -2,7 +2,7 @@ const Services = () => {
   return (
     <div className="services mt-[45px] flex flex-col items-center">
       {/* Heading */}
-      <div className="heading text-3xl font-bold mb-8 text-center text-shadow shadow-slate-900">
+      <div className="heading text-3xl font-bold mb-8 text-center [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black">
         Our Services
       </div>
 
