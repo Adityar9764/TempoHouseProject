@@ -3,75 +3,60 @@ import  { useState, useEffect } from "react";
 
 const products = [
   {
-    title: "Engine Types: Overview of ...",
-    date: "27 Apr, 2024",
-    description:
-      "Understanding these different engines not only enhances appreciation for automotive.",
-    tags: ["DIESEL", "ELECTRIC CARS", "ENGINE", "PETROL"],
-    imageUrl: "https://yourimageurl.com/engine.jpg",
+    title: "Clutch Plate",
+    description: "Engages and disengages the engine from the gearbox",
+    tags: ["TRANSMISSION", "ENGINE COMPONENTS", "CLUTCH SYSTEM"],
+    imageUrl: "/clutchplate.png",
   },
   {
-    title: "Unveiling the Exhaust System ...",
-    date: "19 Apr, 2024",
-    description:
-      "The exhaust system is a critical component that affects performance and emissions.",
-    tags: ["CATALYST", "EXHAUST"],
-    imageUrl: "https://yourimageurl.com/exhaust.jpg",
+    title: "Brake Shoe",
+    description: "Provides friction to stop the vehicle by pressing against the brake drum",
+    tags: ["BRAKING SYSTEM", "SAFETY","BRAKE COMPONENTS"],
+    imageUrl: "/brakeshoe.jpg",
   },
-
-  {
-    title: "Suspension Systems: The Basics",
-    date: "11 Apr, 2024",
-    description:
-      "The suspension system is crucial for ride comfort, handling, and safety.",
+  
+    {
+    title: "Leaf Springs",
+    description: "absorbs shock from uneven road surfaces, ensuring smooth vehicle movement",
     tags: ["SHOCK ABSORBERS", "SUSPENSION"],
-    imageUrl: "https://yourimageurl.com/suspension.jpg",
-  },
+    imageUrl: "/leafspring.jpg",
+    },
+      
+    {
+    title: "Engine Mounting",
+    description: "Supports the engine and absorbs vibrations, ensuring smooth engine operation",
+    tags: ["ENGINE COMPONENTS", "VIBRATION CONTROL"],
+    imageUrl: "/enginemount.jpg",
+    },
 
-  {
-    title: "Transmission Systems: A Closer Look",
-    date: "03 Apr, 2024",
-    description:
-      "The transmission system is a complex part that transfers power from the engine.",
-    tags: ["GEARBOX", "TRANSMISSION"],
-    imageUrl: "https://yourimageurl.com/transmission.jpg",
-  },
+    {
+    title: "Steering Linkage",
+    description: "Transmits the steering wheel’s motion to the wheels for directional control",
+    tags: ["STEERING SYSTEM","CONTROL", "SUSPENSION"],
+    imageUrl: "/steeringlinkage.jpg",
+    },
 
-  {
-    title: "Braking Systems: The Essentials",
-    date: "26 Mar, 2024",
-    description:
-      "The braking system is crucial for safety and performance, and it comes in various types.",
-    tags: ["BRAKES", "DISC BRAKES", "DRUM BRAKES"],
-    imageUrl: "https://yourimageurl.com/brakes.jpg",
-  },
+    {
+    title: "Fuel Pump",
+    description: "Pumps fuel from the tank to the engine for efficient combustion",
+    tags: ["ENGINE COMPONENTS", "FUEL SYSTEM"],
+    imageUrl: "/fuelpump.jpg",
+    },
 
-  {
-    title: "Steering Systems: The Fundamentals",
-    date: "18 Mar, 2024",
-    description:
-      "The steering system is essential for controlling the direction of the vehicle.",
-    tags: ["POWER STEERING", "STEERING"],
-    imageUrl: "https://yourimageurl.com/steering.jpg",
-  },
+    {
+    title: "Alternator",
+    description: "Generates electrical power for the vehicle while recharging the battery",
+    tags: ["ELECTRICAL SYSTEM", "POWER GENERATION", "CHARING"],
+    imageUrl: "/alternator.jpg",
+    },
 
-  {
-    title: "Cooling Systems: An Overview",
-    date: "10 Mar, 2024",
-    description:
-      "The cooling system is crucial for maintaining engine temperature and performance.",
-    tags: ["COOLANT", "RADIATOR"],
-    imageUrl: "https://yourimageurl.com/cooling.jpg",
-  },
+    {
+    title: "Shock Absorbers",
+    description: "Reduces shock from the road, providing stability and comfort during driving",
+    tags: ["SUSPENSION", "COMFORT", "STABILITY"],
+    imageUrl: "/shockabsorber.jpg",
+    },
 
-  {
-    title: "Electrical Systems: The Basics",
-    date: "02 Mar, 2024",
-    description:
-      "The electrical system is essential for powering various components in the vehicle.",
-    tags: ["ALTERNATOR", "BATTERY", "STARTER MOTOR"],
-    imageUrl: "https://yourimageurl.com/electrical.jpg",
-  },
 ];
 
 const ProductCard = ({ product }) => (
@@ -85,7 +70,6 @@ const ProductCard = ({ product }) => (
       <h3 className="font-oswald text-lg font-bold text-steel-blue">
         {product.title}
       </h3>
-      <p className="text-sm text-gray-500 mb-2">{product.date}</p>
       <p className="font-roboto text-gray-700 flex-grow">
         {product.description}
       </p>
