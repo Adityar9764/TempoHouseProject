@@ -59,20 +59,20 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/services"
+              <a
+                href="#services"
                 className="block py-1 pl-2 pr-3 text-black lg:text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
               >
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="/client"
+              <a
+                href="#clients"
                 className="block py-1 pl-2 pr-3 text-black lg:text-white rounded hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-gray-300 lg:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent"
               >
-                Client
-              </Link>
+                Clients
+              </a>
             </li>
             <li>
               <Link

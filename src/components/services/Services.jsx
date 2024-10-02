@@ -1,13 +1,13 @@
 const Services = () => {
   return (
-    <div className="services mt-[45px] flex flex-col items-center">
+    <div className="services mt-[45px] flex flex-col items-center" id="services">
       {/* Heading */}
       <div className="heading text-3xl font-bold mb-8 text-center [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black">
         Our Services
       </div>
 
       {/* Content */}
-      <div className="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 cursor-pointer">
         {/* Card 1 */}
         <div className="card1 bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105">
           <div className="pic">
