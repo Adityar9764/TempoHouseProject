@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import WhyTrustUs from "./WhytrustUs.jsx";
 import ProductRange from "./productRange.jsx";
 import ReviewsSection from "./reviews.jsx";
@@ -7,6 +8,13 @@ import ClientsMarqueeSection from "./Marquee.jsx";
 import Services from "../services/Services.jsx";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/contact');  
+  };
+  
   return (
     <>
       {/* Top Banner Section */}
@@ -25,11 +33,8 @@ const Home = () => {
         </p>
 
         <div className="absolute bottom-8 inset-x-0 flex justify-center space-x-4 z-20">
-          <button className="shop bg-white text-steel-blue font-roboto py-2 px-4 md:py-2 md:px-6 rounded-md hover:bg-gray-200 transition duration-300 drop-shadow-lg [text-shadow:1px_1px_2.5px_var(--tw-shadow-color)] shadow-black">
-            Shop Now
-          </button>
-          <button className="explore border border-white text-white font-roboto py-2 px-4 md:py-2 md:px-6 rounded-md hover:bg-gray-100 hover:text-steel-blue transition duration-300 drop-shadow-lg [text-shadow:1px_1px_5.6px_var(--tw-shadow-color)] shadow-black">
-            Explore Our Products
+          <button  onClick={handleContactClick} className="explore border border-white text-white font-roboto py-2 px-4 md:py-2 md:px-6 rounded-md hover:bg-gray-100 hover:text-steel-blue transition duration-300 drop-shadow-lg [text-shadow:1px_1px_5.6px_var(--tw-shadow-color)] shadow-black">
+            Contact Us
           </button>
         </div>
       </section>
